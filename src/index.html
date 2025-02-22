@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Anagram Checker</title>
+</head>
+
+<body>
+
+    <div class="">
+
+        <div class="max-sm:ml-3">
+
+            <h1 class="font-sans text-[22px] font-semibold text-gray-900">
+                Anagram Checker
+            </h1>
+            
+            <p class="mt-2 text-gray-500">
+                This web app will check if both words are valid anagram
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-2 mt-6 lg:grid-cols-2 md:grid-cols-2 max-sm:grid-cols-1">
+
+            <div class="my-2 mr-5 max-sm:ml-3">
+                <label class="block" for="firstWord">
+                    First word:
+                </label>
+
+                <input class="block mt-2 pl-2 pr-28 py-1.5 rounded-md bg-white outline-1 outline-gray-400 max-sm:pr-25" 
+                type="text" name="firstWord" id="firstWord" placeholder="Enter first word">
+
+                <label class="block mt-5" for="secondWord">
+                    Second word:
+                </label>
+
+                <input class="block mt-2 pl-2 pr-28 py-1.5 rounded-md bg-white outline-1 outline-gray-400 max-sm:pr-25" 
+                type="text" name="secondWord" id="secondWord" placeholder="Enter second word">
+
+                <button class="mt-6 bg-sky-400 rounded-full py-1 px-4 cursor-pointer" onclick="submitResult()">
+                    Submit
+                </button>
+
+            </div>
+    
+            <div class="m-2 max-sm:ml-3">
+
+                <label for="result">
+                    Result:
+                </label>
+
+                <textarea class="block mt-2 w-full pl-2 pr-28 py-1.5 h-32 rounded-md bg-white outline-1 outline-gray-400" name="result" id="result" readonly>
+
+                </textarea>
+    
+            </div>
+    
+        </div>
+
+    </div>
+        
+
+
+
+    <script src="../src/main.js"></script>
+
+</body>
+
+</html>
